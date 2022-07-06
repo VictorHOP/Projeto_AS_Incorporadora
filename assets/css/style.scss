@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import "tipografia";
+@import "buttons";
+
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+// v v v HEADER CSS v v v
+header{
+    height: 91px;
+}
+.menu{
+    padding-left: 200px;
+    display: flex;
+}
+.menu a{
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    text-decoration: none;
+    padding: 35px;
+    border-right: 1px solid rgba(0, 0, 0, 0.233);
+    
+}
+.logo{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+// ---FIM DO CSS HEADER---
+
+// v v v INDEX CSS v v v
+.background-capa{
+    background-image: url(/AsIncorporadora/assets/imgs/background-capa.png);
+    background-color: aqua;
+    height: 569px;
+    width: 100%;
+    background-position: center;
+}
+hr {
+    margin: 1rem 0;
+    color: black;
+    border-top: 9px solid;
+    opacity: 1;
+}
+.border-bottom-cinza{
+    border-bottom: 2px solid #C4C4C4;
+}
+.border-bottom-preta{
+    border-bottom: 2px solid black;
+}
+.numero-1997{
+    position: absolute;
+    top: 11%;
+}
