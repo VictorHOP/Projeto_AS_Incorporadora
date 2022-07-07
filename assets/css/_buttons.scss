@@ -7,16 +7,28 @@ button{
 }
 .botao-preto{
     background-color: black;
-
+    &:hover{
+        box-shadow: 0px 10px 20px #767676;
+    }
 }
 .botao-vermelho{
     background-color: #8A1002;
+    &:hover{
+        background-color: #C61400;
+        box-shadow: 0px 10px 20px rgba(198, 20, 0, 0.7);
+    }
 }
 .botao-transparente-bwhite{
     background-color: transparent;
     border: white 1px solid;
+    &:hover{
+        box-shadow: 0px 10px 20px #767676;
+    }
 }
 .botao-transparente-bred{
     background-color: transparent;
     border: #8A1002 1px solid;
+    &:hover{
+        box-shadow: 0px 10px 20px rgba(198, 20, 0, 0.7);
+    }
 }

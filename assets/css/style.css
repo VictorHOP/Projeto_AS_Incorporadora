@@ -81,19 +81,32 @@ button {
 .botao-preto {
   background-color: black;
 }
+.botao-preto:hover {
+  box-shadow: 0px 10px 20px #767676;
+}
 
 .botao-vermelho {
   background-color: #8A1002;
+}
+.botao-vermelho:hover {
+  background-color: #C61400;
+  box-shadow: 0px 10px 20px rgba(198, 20, 0, 0.7);
 }
 
 .botao-transparente-bwhite {
   background-color: transparent;
   border: white 1px solid;
 }
+.botao-transparente-bwhite:hover {
+  box-shadow: 0px 10px 20px #767676;
+}
 
 .botao-transparente-bred {
   background-color: transparent;
   border: #8A1002 1px solid;
+}
+.botao-transparente-bred:hover {
+  box-shadow: 0px 10px 20px rgba(198, 20, 0, 0.7);
 }
 
 * {
@@ -104,19 +117,45 @@ header {
   height: 91px;
 }
 
+.offcanvas.offcanvas-end {
+  width: 100%;
+}
+
 .menu {
-  padding-left: 200px;
   display: flex;
 }
 
-.menu a {
-  color: black;
+.menu ul li a {
   font-size: 16px;
   font-weight: 500;
   line-height: 20px;
   text-decoration: none;
-  padding: 35px;
+}
+
+.nav-item {
   border-right: 1px solid rgba(0, 0, 0, 0.233);
+  padding: 1.5rem;
+}
+
+.nav-link {
+  color: black;
+  text-align: center;
+  width: 100%;
+}
+
+.close {
+  box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.25);
+  border-radius: 20px 20px 0px 0px;
+  background-color: white;
+  padding-top: 10px;
+}
+
+.btn-close {
+  opacity: 1;
+  width: auto;
+  height: auto;
+  background: none;
+  color: #000000;
 }
 
 .logo {
@@ -151,4 +190,72 @@ hr {
 .numero-1997 {
   position: absolute;
   top: 11%;
+}
+
+input {
+  background-color: black;
+  border: 2px solid white;
+  border-radius: 3px;
+}
+
+input::-moz-placeholder {
+  color: white;
+  padding-left: 10px;
+}
+
+input:-ms-input-placeholder {
+  color: white;
+  padding-left: 10px;
+}
+
+input::placeholder {
+  color: white;
+  padding-left: 10px;
+}
+
+footer ul li {
+  list-style-image: url(/AsIncorporadora/assets/imgs/list-style.png);
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 35px;
+}
+footer ul li:hover {
+  opacity: 50%;
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: #000000;
+}
+footer ul li a:hover {
+  color: #000000;
+  text-decoration: underline;
+}
+
+ul {
+  margin: 0;
+}
+
+.politica a:hover {
+  opacity: 50%;
+}
+
+.redes img:hover {
+  opacity: 50%;
+}
+
+.background-footer {
+  background-color: #028A49;
+}
+
+.footer-verde div {
+  padding: 0 8% 0 8%;
+}
+.footer-verde div:hover {
+  background: #00b35c;
+}
+
+.footer-vendas {
+  border-left: 1px solid rgba(255, 255, 255, 0.144);
+  border-right: 1px solid rgba(255, 255, 255, 0.144);
 }/*# sourceMappingURL=style.css.map */

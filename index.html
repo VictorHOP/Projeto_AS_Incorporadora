@@ -14,24 +14,74 @@
 
 <body>
 
-    <header class="position-relative">
+    <header class="position-relative d-flex flex-sm-row-reverse flex-lg-row justify-content-lg-end justify-content-sm-start container-xxl-fluid">
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navbar">
+            <div class="container-fluid bg-white">
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu" >
+                    <span class="navbar-toggler-icon" data-bs-target="#offcanvasMenu"></span>
+                </button>
+                <div class="offcanvas offcanvas-end bg-white" data-bs-hideresize="true" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenu">
+                    <div class="offcanvas-header">
+                        <div class="background-footer w-100 d-flex justify-content-center text-white footer-verde">
+                            <div class="d-flex align-items-center footer-vendas">
+                                <img class="pe-2" src="assets/imgs/icone-tel-footer.png" alt="icone telefone">
+                                <p class="m-0 py-2">
+                                    <fw700>Vendas</fw700><br>18 3916 2287
+                                </p>
+                            </div>
+                            <div class="d-flex align-items-center footer-vendas">
+                                <img class="pe-2" src="assets/imgs/icone-whats-footer.png" alt="icone Whatsapp">
+                                <p class="m-0">
+                                    <fw700>Whatsapp</fw700><br>18 3916 2287
+                                </p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav menu me-lg-5 pe-lg-5 pe-sm-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">HOME</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">EMPREENDIMENTOS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">BLOG</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">CONTATO</a>
+                            </li>
+                        </ul>
+                        <div class="d-md-none align-items-center d-flex d-sm-flex flex-column pb-5 mb-5">
+                            <button class="botao-preto w-100 mb-4"><img src="assets/imgs/icone-colaborador.png" alt="Icone 3 pessoas">
+                                COLABORADOR</button>
+                            <button class="botao-vermelho w-100"><img src="assets/imgs/icone-cliente.png" alt="icone usuario">
+                                CLIENTE</button>
+                        </div>
+                        <div class="d-flex justify-content-between px-5 align-items-center close fixed-bottom d-lg-none">
+                            <button type="button" class="btn-close btn-close text-reset d-lg-none fw-bold fs-22" data-bs-dismiss="offcanvas" aria-label="Close"><img src="assets/imgs/fechar.png" alt="">FECHAR</button>
+                            <img src="assets/imgs/logo-AS.png" style="width: 68px; height: 78px;" alt="Logo AS">
+                        </div>
+                        
+                    </div>
+
+                    
+                </div>
+
+            </div>
+        </nav>
+
+        <div class="d-md-flex align-items-center me-lg-0 me-5 pe-lg-0 pe-5 d-none d-sm-none">
+            <button class="botao-preto"><img src="assets/imgs/icone-colaborador.png" alt="Icone 3 pessoas">
+                COLABORADOR</button>
+            <button class="botao-vermelho"><img src="assets/imgs/icone-cliente.png" alt="icone usuario">
+                CLIENTE</button>
+        </div>
 
         <div class="logo">
             <img src="assets/imgs/logo-AS.png" alt="Logo AS Incorporadora">
-        </div>
-        <div class="d-flex justify-content-between h-100 align-items-center">
-            <nav class="menu h-100 d-flex align-items-center">
-                <a href="">HOME</a>
-                <a href="">EMPREENDIMENTOS</a>
-                <a href="">BLOG</a>
-                <a href="">CONTATO</a>
-            </nav>
-            <div>
-                <button class="botao-preto"><img src="assets/imgs/icone-colaborador.png" alt="Icone 3 pessoas">
-                    COLABORADOR</button>
-                <button class="botao-vermelho"><img src="assets/imgs/icone-cliente.png" alt="icone usuario">
-                    CLIENTE</button>
-            </div>
         </div>
     </header>
     <main>
@@ -58,7 +108,7 @@
                 <fw700>LANÇAMENTOS</fw700>
             </h2>
             <hr>
-            <div class="d-flex justify-content-between fw500">
+            <div class="d-flex justify-content-between fw500 flex-wrap">
                 <div class="d-flex flex-column">
                     <img src="assets/imgs/veredas3-card-loteamento.png" alt="loteamento veredas 3">
                     <p class="fs-14 my-2">DE 156 A 369m² . 110 LOTES</p>
@@ -94,7 +144,7 @@
                     <p class="m-0 px-5 text-black-50">OBRAS EM ANDAMENTO</p>
                     <p class="m-0 px-5 text-black-50">TODAS AS OBRAS</p>
                 </div>
-                <div class="d-flex justify-content-between fw500">
+                <div class="d-flex justify-content-between fw500 flex-wrap">
                     <div class="d-flex flex-column">
                         <img src="assets/imgs/veredas3-card-obras.png" alt="foto obra vereda 3">
                         <p class="fs-14 my-2">100% OBRAS CONCLUIDAS</p>
@@ -120,16 +170,21 @@
                     </div>
                 </div>
             </div>
+            <div class="d-flex justify-content-between mb-3 py-5">
+                <img src="assets/imgs/next e prev.png" alt="botão esquerda e direita">
+                <button class="botao-vermelho px-5 m-0">VER TODOS OS EMPREENDIMENTOS</button>
+            </div>
         </section>
 
         <section class="bg-black">
 
             <div class="container position-relative pt-5">
+                <img class="numero-1997 end-0" src="assets/imgs/1997.png" alt="numero 1997">
                 <h2 class="text-white mt-5">MUITO MAIS DO QUE <br>
                     <fw700>UMA INCORPORADORA</fw700>
                 </h2>
                 <hr class="text-muted">
-                <img class="numero-1997 end-0" src="assets/imgs/1997.png" alt="numero 1997">
+                
 
                 <div class="mt-5 py-5 d-flex  flex-column align-items-center">
                     <p class="text-white mt-5 col-7 fs-18 px-4">
@@ -160,14 +215,15 @@
 
             <div class="container">
                 <div class="my-5 pt-5">
-                    <h2 class="vermelho">NOVIDADES DO <fw700>BLOG</fw700></h2>
+                    <h2 class="vermelho">NOVIDADES DO <fw700>BLOG</fw700>
+                    </h2>
                     <hr>
                 </div>
 
                 <div class="d-flex justify-content-between mb-5">
                     <div class="d-flex flex-column col-6 pe-3">
                         <img src="assets/imgs/novidade 15 ago.png" alt="foto pessoas algulo de cima">
-                        <h5 class="text-black">Empresa investe R$ 2,5 milhões e lança movimento para reinventar a vida das pessoas
+                        <h5>Empresa investe R$ 2,5 milhões e lança movimento para reinventar a vida das pessoas
                             #ReinventaSP
                         </h5>
                         <p>Com criação de novas praças, quadras esportivas e estações de mobilidade pela capital
@@ -182,7 +238,7 @@
 
                     <div class="d-flex flex-column col-6 ps-3">
                         <img src="assets/imgs/novidade 14 ago.png" alt="foto casa">
-                        <h5 class="text-black">Alugar ou comprar “imóveis de Lego”: conheça a moradia modular, que cresce no Brasil
+                        <h5>Alugar ou comprar “imóveis de Lego”: conheça a moradia modular, que cresce no Brasil
                         </h5>
                         <p>Moradia modular e pré-fabricada é praticada por startups brasileiras como Ambar e Brasil ao
                             Cubo;
@@ -195,26 +251,127 @@
 
                     </div>
                 </div>
-                <button class="botao-vermelho">VER TODAS AS NOTICIAS</button>
+                <div class="d-flex justify-content-between mb-5 pb-5">
+                    <img src="assets/imgs/next e prev.png" alt="botão esquerda e direita">
+                    <button class="botao-vermelho px-5 m-0">VER TODAS AS NOTICIAS</button>
+                </div>
             </div>
         </section>
 
         <section class="bg-black">
-            <h2> RECEBA NOVIDADES<br> POR E-MAIL</h2>
-
-            <div class="d-flex">
-                <input type="text" name="nome" placeholder="Digite seu nome">
-                <input type="email" name="email" placeholder="Digite seu e-mail">
-                <button>RECEBER NOVIDADES</button>
+            <div class="container py-5">
+                <h2 class="text-white"> RECEBA NOVIDADES<br>
+                    <fw700>POR E-MAIL</fw700>
+                </h2>
+                <hr class="text-muted pb-3">
+                <div class="d-flex justify-content-between">
+                    <input class="col-4" type="text" name="nome" placeholder="Digite seu nome">
+                    <input class="col-4" type="email" name="email" placeholder="Digite seu e-mail">
+                    <button class="botao-vermelho m-0">RECEBER NOVIDADES</button>
+                </div>
             </div>
         </section>
 
     </main>
+
+    <footer>
+        <div class="container">
+            <div class="d-flex justify-content-between mt-5">
+                <div class="d-flex flex-column">
+                    <p class="fw600">Atendimento</p>
+                    <div class="d-flex align-items-center">
+                        <img class="pe-2" src="assets/imgs/icone-localizacao.png" alt="icone localização">
+                        <p class="m-0">Seg à Sex <br>das 8hs às 18hs</p>
+                    </div>
+                </div>
+
+                <div class="d-flex flex-column">
+                    <ul>
+                        <li><a href="">HOME</a></li>
+                        <li><a href="">BLOG</a></li>
+                        <li><a href="">CONTATO</a></li>
+                        <li><a href="">TRABALHE CONOSCO</a></li>
+                    </ul>
+                </div>
+
+                <div class="d-flex flex-column">
+                    <ul>
+                        <li><a href="">EMPREENDIMENTOS</a></li>
+                        <li><a href="">OBRAS CONCLUÍDAS</a></li>
+                        <li><a href="">OBRAS EM ANDAMENTO</a></li>
+                        <li><a href="">OFEREÇA SUA ÁREA</a></li>
+                    </ul>
+                </div>
+
+                <div class="d-flex flex-column justify-content-between">
+                    <button class="botao-preto m-0 py-2"><img src="assets/imgs/icone-colaborador.png"
+                            alt="Icone 3 pessoas">
+                        COLABORADOR</button>
+                    <button class="botao-vermelho m-0 py-2 mb-5"><img src="assets/imgs/icone-cliente.png"
+                            alt="icone usuario">
+                        CLIENTE</button>
+                </div>
+            </div>
+            <div class="d-flex justify-content-between border-bottom-cinza mt-4 pb-5">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="d-flex flex-column me-3">
+                        <p class="fw600 mb-2">Central de Atendimento</p>
+                        <div class="d-flex align-items-center">
+                            <img class="pe-2" src="assets/imgs/icone-tel.png" alt="icone telefone">
+                            <p class="m-0">18 3916 2287</p>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column ps-5 ms-4 politica">
+                        <a class="text-black" href="#privacidade">Política de Privacidade</a>
+                        <a class="text-black" href="#cookies">Preferência de Cookies</a>
+                    </div>
+                </div>
+
+                <nav class="d-flex align-items-center redes">
+                    <a href=""><img src="assets/imgs/icone-youtube.png" alt="logo youtube"></a>
+                    <a href="" class="ps-5"><img src="assets/imgs/icone-facebook.png" alt="logo facebook"></a>
+                    <a href="" class="ps-5"><img src="assets/imgs/icone-instagram.png" alt="logo instagram"></a>
+                </nav>
+            </div>
+
+            <div class="d-flex justify-content-start my-5">
+                <img src="assets/imgs/logo-AS-vertical.png" alt="Logo AS Incorporadora">
+                <div class="d-flex align-items-center">
+                    <p class="fs-14 m-0 text-muted ps-4 pe-2">Todos os direitos reservados © 2021 | AS Icorporadora -
+                        CRECI 021030-J -
+                        Criação</p>
+                    <img class="pt-1" src="assets/imgs/logo-o2.png" alt="logo oxigenweb">
+                </div>
+
+            </div>
+        </div>
+
+        <div class="background-footer d-flex justify-content-center text-white footer-verde">
+            <div class="d-flex align-items-center">
+                <img class="pe-2" src="assets/imgs/icone-email-footer.png" alt="icone carta">
+                <p class="m-0">
+                    <fw700>Formulário</fw700><br>de contato
+                </p>
+            </div>
+            <div class="d-flex align-items-center footer-vendas">
+                <img class="pe-2" src="assets/imgs/icone-tel-footer.png" alt="icone telefone">
+                <p class="m-0 py-2">
+                    <fw700>Vendas</fw700><br>18 3916 2287
+                </p>
+            </div>
+            <div class="d-flex align-items-center">
+                <img class="pe-2" src="assets/imgs/icone-whats-footer.png" alt="icone Whatsapp">
+                <p class="m-0">
+                    <fw700>Whatsapp</fw700><br>18 3916 2287
+                </p>
+            </div>
+        </div>
+    </footer>
     <!-- SCRIPTS -->
-    <script src="assets/scripts/jquery.js"></script>
-    <script src="assets/scripts/bootstrap.js"></script>
-    <script src="assets/scripts/popper.js"></script>
-    <script src="https://kit.fontawesome.com/7aed4474c4.js" crossorigin="anonymous"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </body>
 
