@@ -43,6 +43,12 @@
   color: #8A1002;
 }
 
+h1 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 40px;
+}
+
 h2 {
   font-size: 30px;
   font-weight: 400;
@@ -190,6 +196,11 @@ hr {
 .numero-1997 {
   position: absolute;
   top: 11%;
+  z-index: 1;
+}
+
+.text-white {
+  z-index: 100;
 }
 
 input {
@@ -210,6 +221,36 @@ input:-ms-input-placeholder {
 
 input::placeholder {
   color: white;
+  padding-left: 10px;
+}
+
+.contato input, .contato select {
+  padding: 15px;
+}
+
+.contato input, .contato textarea, .contato select {
+  background-color: white;
+  border: 1px solid #DADADA;
+}
+
+.contato input::-moz-placeholder, .contato textarea::-moz-placeholder {
+  font-size: 17px;
+  font-weight: 500;
+  color: black;
+  padding-left: 10px;
+}
+
+.contato input:-ms-input-placeholder, .contato textarea:-ms-input-placeholder {
+  font-size: 17px;
+  font-weight: 500;
+  color: black;
+  padding-left: 10px;
+}
+
+.contato input::placeholder, .contato textarea::placeholder {
+  font-size: 17px;
+  font-weight: 500;
+  color: black;
   padding-left: 10px;
 }
 
@@ -258,4 +299,27 @@ ul {
 .footer-vendas {
   border-left: 1px solid rgba(255, 255, 255, 0.144);
   border-right: 1px solid rgba(255, 255, 255, 0.144);
+}
+
+.swiper-button-next, .swiper-button-prev {
+  position: relative;
+  top: auto;
+  width: auto;
+  height: auto;
+  left: auto;
+  right: auto;
+}
+
+.mapouter {
+  position: relative;
+  text-align: right;
+  height: 435px;
+  width: 100%;
+}
+
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  height: 435px;
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */

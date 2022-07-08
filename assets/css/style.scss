@@ -77,6 +77,10 @@ hr {
 .numero-1997{
     position: absolute;
     top: 11%;
+    z-index: 1;
+}
+.text-white{
+    z-index: 100;
 }
 input{
     background-color: black;
@@ -85,6 +89,20 @@ input{
 }
 input::placeholder{
     color: white;
+    padding-left: 10px;
+}
+.contato input, .contato select{
+    padding: 15px;
+}
+.contato input, .contato textarea, .contato select{
+    background-color: white;
+    border: 1px solid #DADADA;
+}
+
+.contato input::placeholder, .contato textarea::placeholder{
+    font-size: 17px;
+    font-weight: 500;
+    color: black;
     padding-left: 10px;
 }
 footer ul li{
@@ -130,6 +148,26 @@ ul{
 .footer-vendas{
     border-left: 1px solid rgba(255, 255, 255, 0.144);
     border-right: 1px solid rgba(255, 255, 255, 0.144);
+}
+.swiper-button-next, .swiper-button-prev {
+ position: relative;
+ top: auto;
+ width: auto;
+ height: auto;
+ left: auto;
+ right: auto;
+}
+.mapouter {
+    position: relative;
+    text-align: right;
+    height: 435px;
+    width: 100%;
+}
+.gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    height: 435px;
+    width: 100%;
 }
 
 @media (max-width: 400px) {
