@@ -1,0 +1,41 @@
+.categorias a{
+    border: 1px solid #4A4A4A;
+    border-radius: 100px;
+    color: #4A4A4A;
+    text-decoration: none;
+    padding: 9px 18px;
+    font-weight: 500;
+    font-size: 13px;
+    &:hover{
+        background-color: black;
+        color: white;
+        border: none;
+        transition: 0.3s;
+    }
+}
+.categorias .active{
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+.paginas a{
+    color: black;
+    border: 1px solid black;
+    padding: 15px 20px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    text-decoration: none;
+    border-radius: 3px;
+    margin-left: 15px;
+    &:hover{
+        color: white;
+        background-color: black;
+        transition: 0.3s;
+    }
+}
+.paginas .active{
+    color: white;
+    background-color: black;
+}

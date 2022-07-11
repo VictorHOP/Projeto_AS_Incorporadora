@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="assets/css/style.css">
 
-    <title>Contato - AsIncorporadora</title>
+    <title>Empresa - AsIncorporadora</title>
 </head>
 
 <body>
@@ -109,108 +109,186 @@
     </header>
     <!-- HEADER TUDO QUE ESTA ACIMA -->
 
-
     <main>
+
         <section class="bg-black pt-5">
             <div class="container py-5">
-                <h1 class="text-white text-center">CONTATO</h1>
-                <p class="text-center m-0 text-white-50">Home | Contato</p>
+                <h1 class="text-white text-center">VEREDAS 3</h1>
+                <p class="text-center m-0 text-white-50">Home | Empreendimentos | Obras Concluidas | Veredas 3</p>
             </div>
             <div class="container">
                 <hr class="vermelho m-0">
             </div>
+            <div class="background-veredas3"></div>
         </section>
 
-        <section class="container">
-            <form class="contato d-flex flex-column align-items-center my-5 py-5">
-                <div class="d-flex flex-column flex-md-row w-100 justify-content-between row">
-                    <div class="d-flex flex-column col-md-6 ps-0 pe-md-5 pe-0 mb-3 mb-md-0">
-                        <input type="text" name="nome" placeholder="Nome">
-                        <input class="my-3" type="tel" name="telefone" placeholder="Telefone">
-                        <input class="mb-3" type="email" name="email" placeholder="E-mail">
-                        <select name="assunto" id="assunto">
-                            <option value="assunto">Assunto</option>
-                            <option value="compra">Compra</option>
-                            <option value="venda">Venda</option>
-                            <option value="outro">Outro</option>
-                        </select>
-                    </div>
-                    <textarea class="col-md-6 pt-3" name="mensagem" id="" placeholder="Digite sua mensagem"></textarea>
-
+        <section class="container my-5">
+            <h2 class="vermelho">DESCRIÇÃO</h2>
+            <hr>
+            <div class="row">
+                <div class="col-8 m-auto my-5">
+                    <p class="fs-18 text-cinza-escuro">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+                        sed lorem eu massa dapibus imperdiet. Morbi semper quis lacus vel tincidunt. Praesent a velit et
+                        diam facilisis vehicula et eu ex. Pellentesque vitae imperdiet neque. Cras condimentum malesuada
+                        vulputate. Vivamus varius nibh quis nisl condimentum euismod. Etiam pulvinar rhoncus ligula, ut
+                        dapibus velit gravida quis. Cras massa urna, iaculis at gravida non, ultricies a tellus.
+                        Phasellus sodales aliquam volutpat. Cras pulvinar ligula sit amet magna tempor, in tincidunt
+                        felis posuere. Quisque imperdiet magna eu arcu venenatis rutrum. Sed tempor tincidunt nisl.</p>
                 </div>
-                <div class="d-flex flex-column flex-md-row justify-content-between py-3">
-                    <p class="col-12 col-md-7 text-muted m-0">*Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Cras tristique
-                        non augue ut mattis.
-                        Suspendisse potenti. In diam mauris, luctus accumsan commodo id, viverra non ante.</p>
-                    <button type="submit" class="text-white botao-vermelho m-0 mt-3 mt-md-0 px-5">ENVIAR
-                        MENSAGEM*</button>
-                </div>
-            </form>
-        </section>
-
-        <section>
-            <div class="container">
-                <div class="mt-5 mb-4 pt-5">
-                    <h2 class="vermelho">ONDE <fw700>ESTAMOS</fw700>
-                    </h2>
-                    <hr>
+            </div>
+            <div class="row bg-black py-5">
+                <div class="d-flex justify-content-center">
+                    <p class="text-white" id="resultado"></p>
+                    <p class="text-white ">% OBRAS CONCLUIDAS</p>
                 </div>
 
-                <div class="mapouter mb-5">
-                    <div class="gmap_canvas"><iframe width="100%" height="435" id="gmap_canvas"
-                            src="https://maps.google.com/maps?q=R.%20On%C3%B3fre%20Biceglia,%20200%20-%20Parque%20das%20Cerejeiras,%20Pres.%20Prudente%20-%20SP,%2019061-310&t=&z=13&ie=UTF8&iwloc=&output=embed"
-                            frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
-                            href="https://www.whatismyip-address.com/divi-discount/">divi discount</a><br>
+                <input id="valor" class="m-auto col-11 range" type="range" min="0" max="100" value="65"
+                    aria-valuenow="65">
+            </div>
 
-                    </div>
+            <div class="d-flex my-4 justify-content-around fw500 fs-14">
+                <div class="d-flex flex-column align-items-center justify-content-center">
+                    <img src="assets/imgs/arborizacao.png" alt="Arvore">
+                    <p class="m-0 mt-1">100%</p>
+                    <p>Arborização</p>
                 </div>
-                <div class="my-5">
-                    <p class="opacity-0">margin</p>
+
+                <div class="d-flex flex-column align-items-center justify-content-center">
+                    <img src="assets/imgs/pavimentacao.svg" alt="Pavimentação">
+                    <p class="m-0 mt-1">100%</p>
+                    <p>Pavimentação</p>
                 </div>
-                <div class="bg-black py-5 my-5">
 
-                    <div class="d-flex flex-md-row flex-column align-items-center justify-content-around">
-
-                        <div class="d-flex flex-column justify-content-center align-items-center align-items-md-start">
-                            <p class="fw600 text-white mb-2">Atendimento</p>
-                            <div class="d-flex align-items-center">
-                                <img class="me-2" src="assets/imgs/icone-atendimento-branco.png"
-                                    alt="icone localização">
-                                <p class="text-white m-0">Seg à Sex das 8hs às 18hs</p>
-                            </div>
-                        </div>
-
-                        <div
-                            class="d-flex flex-column justify-content-center py-5 py-md-0 align-items-center align-items-md-start">
-                            <p class="fw600 text-white mb-2">Central de Atendimento</p>
-                            <div class="d-flex align-items-center">
-                                <img class="me-2" src="assets/imgs/icone-atendimento-branco.png" alt="icone telefone">
-                                <p class="text-white m-0">18 3916 2287</p>
-                            </div>
-                        </div>
-
-                        <div
-                            class="d-flex flex-column background-footer justify-content-center p-3 px-5 rounded-1 align-items-center align-items-md-start">
-                            <p class="fw600 text-white mb-2">Whatsapp</p>
-                            <div class="d-flex align-items-center">
-                                <img class="me-2" src="assets/imgs/icone-whats-footer.png" alt="icone Whatsapp">
-                                <p class="text-white m-0">18 3916 2287</p>
-                            </div>
-                        </div>
-
-                    </div>
-
+                <div class="d-flex flex-column align-items-center justify-content-center">
+                    <img src="assets/imgs/energia.svg" alt="Raio energia">
+                    <p class="m-0 mt-1">100%</p>
+                    <p>Energia Elétrica</p>
                 </div>
-                <div class="my-5">
-                    <p class="opacity-0">margin</p>
+
+                <div class="d-flex flex-column align-items-center justify-content-center">
+                    <img src="assets/imgs/tijolo.svg" alt="tijolo">
+                    <p class="m-0 mt-1">95%</p>
+                    <p>Guias e Sarjetas</p>
+                </div>
+
+                <div class="d-flex flex-column align-items-center justify-content-center">
+                    <img src="assets/imgs/agua.svg" alt="gota de agua">
+                    <p class="m-0 mt-1">0%</p>
+                    <p>Rede de Água</p>
+                </div>
+                <div class="d-flex flex-column align-items-center justify-content-center">
+                    <img src="assets/imgs/esgoto.svg" alt="gota de agua">
+                    <p class="m-0 mt-1">0%</p>
+                    <p>Rede de Esgoto</p>
+                </div>
+            </div>
+
+            <div class="fundo-vermelho d-flex justify-content-around text-white fs-20 px-5">
+                <div class="d-flex flex-column align-items-center justify-content-center py-5 ">
+                    <img src="assets/imgs/localizacao.svg" alt="icone localizacao">
+                    <p class="fw-bold my-2">Próximo ao centro</p>
+                    <p class="m-0">3km</p>
+                </div>
+                <div class="borda-fundo-vermelho"></div>
+                <div class="d-flex flex-column align-items-center justify-content-center">
+                    <img src="assets/imgs/carrinho-mercado.svg" alt="icone carrinho-mercado">
+                    <p class="fw-bold my-2">Próximo a Mercados</p>
+                    <p class="m-0">1km</p>
+                </div>
+                <div class="borda-fundo-vermelho"></div>
+                <div class="d-flex flex-column justify-content-center align-items-center">
+                    <img src="assets/imgs/chapeu-faculdade.svg" alt="icone beca faculdade">
+                    <p class="fw-bold my-2">Próximo à Faculdades</p>
+                    <p class="m-0">5km</p>
                 </div>
             </div>
         </section>
 
+        <section>
+            <div class="mt-5 pt-5 container mb-5">
+                <h2 class="vermelho">GALERIA DE <fw700>IMAGENS</fw700>
+                </h2>
+                <hr>
+            </div>
+            <div class="swiperVeredas3 swiper container-fluid w-100 ">
+                <div class="d-flex pb-4 swiper-wrapper">
+                    <div class="position-relative d-flex flex-column swiper-slide">
+                        <img src="assets/imgs/galeria-rua.png" alt="foto rua do loteamento">
+                        <img class="lupa" src="assets/imgs/lupa-img.png" alt="icone lupa">
+                    </div>
+                    <div class="d-flex flex-column swiper-slide">
+                        <img src="assets/imgs/galeria-loteamento 1.png" alt=" foto loteamento">
+                        <img class="lupa" src="assets/imgs/lupa-img.png" alt="icone lupa">
+                    </div>
+                    <div class="d-flex flex-column swiper-slide">
+                        <img src="assets/imgs/galeria-loteamento 2.png" alt="foto loteamento">
+                        <img class="lupa" src="assets/imgs/lupa-img.png" alt="icone lupa">
+                    </div>
+                    <div class="d-flex flex-column swiper-slide">
+                        <img src="assets/imgs/galeria-rua.png" alt="foto rua do loteamento">
+                        <img class="lupa" src="assets/imgs/lupa-img.png" alt="icone lupa">
+                    </div>
+                    <div class="d-flex flex-column swiper-slide">
+                        <img src="assets/imgs/galeria-loteamento 1.png" alt=" foto loteamento">
+                        <img class="lupa" src="assets/imgs/lupa-img.png" alt="icone lupa">
+                    </div>
+                    <div class="d-flex flex-column swiper-slide">
+                        <img src="assets/imgs/galeria-loteamento 2.png" alt="foto loteamento">
+                        <img class="lupa" src="assets/imgs/lupa-img.png" alt="icone lupa">
+                    </div>
+                </div>
+                <div class="d-flex justify-content-between my-5 pb-5 px-5 mx-5">
+                    <div class="d-flex align-items-end">
+                        <img class="swiper-button-prev pe-3" src="assets/imgs/swipper-button-prev.png"
+                            alt="botão esquerda">
+                        <img class="swiper-button-next" src="assets/imgs/swipper-button-next.png" alt="botão direita">
+                    </div>
 
+                    <button class="botao-vermelho">ENTRAR EM CONTATO</button>
+                </div>
+            </div>
+        </section>
 
+        <section class="container">
+            <div class="mt-5 pt-5 mb-4">
+                <h2 class="vermelho">FALE COM UM <fw700>CORRETOR</fw700>
+                </h2>
+                <hr>
+            </div>
+            <div class="row">
+                <p class="col-12 col-lg-7 text-cinza-escuro">Tem interesse em adquirir um lote ou tirar alguma dúvida
+                    sobre o projeto? Preencha o formulário e entraremos em contato o mais breve possível.</p>
+                <form class="contato d-flex flex-column align-items-center mb-5 pb-5">
+                    <div class="d-flex flex-column flex-md-row w-100 justify-content-between row">
+                        <div class="d-flex flex-column col-md-6 ps-0 pe-md-5 pe-0 mb-3 mb-md-0">
+                            <input type="text" name="nome" placeholder="Nome">
+                            <input class="my-3" type="tel" name="telefone" placeholder="Telefone">
+                            <input class="mb-3" type="email" name="email" placeholder="E-mail">
+                            <select name="assunto" id="assunto">
+                                <option value="assunto">Assunto</option>
+                                <option value="compra">Compra</option>
+                                <option value="venda">Venda</option>
+                                <option value="outro">Outro</option>
+                            </select>
+                        </div>
+                        <textarea class="col-md-6 pt-3" name="mensagem" id=""
+                            placeholder="Digite sua mensagem"></textarea>
+
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between py-3">
+                        <p class="col-12 col-md-7 text-cinza-escuro m-0">*Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit.
+                            Cras tristique
+                            non augue ut mattis.
+                            Suspendisse potenti. In diam mauris, luctus accumsan commodo id, viverra non ante.</p>
+                        <button type="submit" class="text-white botao-vermelho m-0 mt-3 mt-md-0 px-5">ENVIAR
+                            MENSAGEM*</button>
+                    </div>
+                </form>
+            </div>
+        </section>
     </main>
+
     <!-- FOOTER TUDO QUE ESTA ABAIXO -->
     <footer>
         <section class="bg-black py-5">
@@ -372,7 +450,35 @@
     <!-- Initialize Swiper -->
     <script>
 
-        const swiper = new Swiper('.swiper', {
+        const swiper2 = new Swiper('.swiperProximo', {
+            // Default parameters
+            slidesPerView: 3,
+            spaceBetween: 10,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        })
+
+        const swiper3 = new Swiper('.swiperEncontre', {
+            // Default parameters
+            slidesPerView: 3,
+            spaceBetween: 10,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        })
+
+        const swiper4 = new Swiper('.swiperNovidades', {
             // Default parameters
             slidesPerView: 2,
             spaceBetween: 10,
@@ -398,6 +504,36 @@
                 prevEl: ".swiper-button-prev",
             },
         })
+
+        const swiper5 = new Swiper('.swiperVeredas3', {
+            // Default parameters
+            slidesPerView: 3,
+            spaceBetween: 10,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        })
+
+    </script>
+
+    <script type="text/javascript">
+
+
+        function range() {
+            let resultado = document.getElementById("resultado");
+            let valor = document.getElementById("valor").value;
+            resultado.innerHTML = valor
+        }
+
+        range()
+
+        document.addEventListener("change", range);
+
     </script>
 </body>
 
