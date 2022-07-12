@@ -2,6 +2,7 @@
     background-image: url(/AsIncorporadora/assets/imgs/background-veredas3.png);
     width: 100%;
     height: 360px;
+    background-position: center;
 }
 .text-cinza-escuro{
     color:#4A4A4A;
@@ -24,7 +25,6 @@
     height: 16px;
     border-radius: 50%; 
     background: #00DD73;
-    cursor: pointer;
 }
 .range::-moz-range-thumb {
     width: 25px;

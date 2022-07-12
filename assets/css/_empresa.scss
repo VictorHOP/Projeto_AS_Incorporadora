@@ -7,9 +7,9 @@
     font-weight: 500;
     font-size: 13px;
     &:hover{
-        background-color: black;
-        color: white;
-        border: none;
+        background-color: #C4C4C4;
+        color: black;
+        border: 1px solid black;
         transition: 0.3s;
     }
 }
@@ -17,6 +17,12 @@
     background-color: black;
     color: white;
     border: none;
+    &:hover{
+        background-color: black;
+        color: white;
+        border: none;
+        cursor: default;
+    }
 }
 
 .paginas a{
@@ -30,12 +36,19 @@
     border-radius: 3px;
     margin-left: 15px;
     &:hover{
-        color: white;
-        background-color: black;
+        background-color: #C4C4C4;
         transition: 0.3s;
     }
 }
 .paginas .active{
     color: white;
     background-color: black;
+    &:hover{
+        color: white;
+        background-color: black;
+        cursor: default;
+    }
+}
+.border-bottom-preta{
+    border-bottom: 1px solid black;
 }
