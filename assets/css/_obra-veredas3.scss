@@ -1,5 +1,5 @@
 .background-veredas3{
-    background-image: url(/AsIncorporadora/assets/imgs/background-veredas3.png);
+    background-image: url(assets/images/background-veredas3.png);
     width: 100%;
     height: 360px;
     background-position: center;
@@ -38,8 +38,7 @@
     background-color: #8A1002;
 }
 .borda-fundo-vermelho{
-    border-right:1px solid rgba(255, 255, 255, 0.185) ;
-    border-left:1px solid rgba(255, 255, 255, 0.185) ;
+    border:1px solid rgba(255, 255, 255, 0.185) ;
 }
 .lupa{
     position:absolute;

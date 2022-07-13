@@ -8,9 +8,10 @@
     font-family: 'Montserrat', sans-serif;
 }
 // v v v HEADER CSS v v v
-header{
+header{  
     height: 91px;
-}
+    background-color: white;
+} 
 .offcanvas.offcanvas-end {
     width: 100%;
 }
@@ -19,7 +20,7 @@ header{
 }
 .menu ul li a{
     
-    font-size: 16px;
+    font-size: 16px; 
     font-weight: 500;
     line-height: 20px;
     text-decoration: none;
@@ -58,7 +59,7 @@ header{
 
 // v v v INDEX CSS v v v
 .background-capa{
-    background-image: url(/AsIncorporadora/assets/imgs/background-capa.png);
+    background-image: url(assets/images/background-capa.png);
     background-color: aqua;
     height: 569px;
     width: 100%;
@@ -114,7 +115,7 @@ hr {
         color: #C61400;
     }
 }
-input{
+input, textarea{
     background-color: black;
     border: 2px solid white;
     border-radius: 3px;
@@ -128,7 +129,7 @@ input::placeholder{
 }
 .contato input, .contato textarea, .contato select{
     background-color: white;
-    border: 1px solid #DADADA;
+    border: 2px solid #DADADA;
 }
 
 .contato input::placeholder, .contato textarea::placeholder, .contato select{
@@ -138,7 +139,7 @@ input::placeholder{
     padding-left: 10px;
 }
 footer ul li{
-    list-style-image: url(/AsIncorporadora/assets/imgs/list-style.png);
+    list-style-image: url(assets/images/list-style.png);
     font-size: 15px;
     font-weight: 500;
     line-height: 35px;
@@ -202,13 +203,17 @@ ul{
     width: 100%;
 }
 
-@media (max-width: 400px) {
-
+@media (max-width: 576px) {
+    header{
+        position: fixed;
+        bottom: 0px;
+        z-index: 60;
+    }
 }
 
 // v v v POST CSS v v v
 .backgroud-capa-post{
-    background-image: linear-gradient(180deg, #5b152e77 4.53%, rgba(69, 8, 26, 0) 89.47%), url(/AsIncorporadora/assets/imgs/background-pag-noticia.png);
+    background-image: linear-gradient(180deg, #5b152e77 4.53%, rgba(69, 8, 26, 0) 89.47%), url(assets/images/background-pag-noticia.png);
     width: 100%;
     height: 504px;
 
@@ -227,4 +232,14 @@ ul{
     background-color: #8A1002;
     color: white;
     padding: 0 20px;
+}
+.border-bottom-vermelha{
+    border-bottom: 9px solid #8A1002;
+}
+.w-47{
+    width: 47%;
+}
+.texto-1997{
+    position: relative;
+    z-index: 48;
 }

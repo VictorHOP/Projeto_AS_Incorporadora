@@ -12,10 +12,19 @@ button{
     }
 }
 .botao-vermelho{
-    background-color: #8A1002;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 3px;
+
+    background-color: #8A1002 !important;
+    border: none !important;
     &:hover{
-        background-color: #C61400;
+        background-color: #C61400 !important;
         box-shadow: 0px 10px 20px rgba(198, 20, 0, 0.7);
+        color: white;
     }
 }
 .botao-transparente-bwhite{
