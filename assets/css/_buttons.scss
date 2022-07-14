@@ -7,8 +7,17 @@ button{
 }
 .botao-preto{
     background-color: black;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 3px;
+    padding: 14px 25px 14px 25px;
     &:hover{
-        box-shadow: 0px 10px 20px #767676;
+        box-shadow: 0px 10px 20px #00000062;
+        color: white;
+        transition: 0.4s;
     }
 }
 .botao-vermelho{
@@ -18,6 +27,7 @@ button{
     text-decoration: none;
     text-align: center;
     border-radius: 3px;
+    padding: 14px 25px 14px 25px;
 
     background-color: #8A1002 !important;
     border: none !important;
@@ -25,19 +35,39 @@ button{
         background-color: #C61400 !important;
         box-shadow: 0px 10px 20px rgba(198, 20, 0, 0.7);
         color: white;
+        transition: 0.4s;
     }
 }
 .botao-transparente-bwhite{
+    color: white;
     background-color: transparent;
     border: white 1px solid;
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 3px;
+    padding: 14px 25px 14px 25px;
     &:hover{
         box-shadow: 0px 10px 20px #767676;
+        color: black;
+        transition: 0.4s;
+        background-color: white;
     }
 }
 .botao-transparente-bred{
+    color: white;
     background-color: transparent;
     border: #8A1002 1px solid;
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 3px;
+    padding: 14px 25px 14px 25px;
     &:hover{
         box-shadow: 0px 10px 20px rgba(198, 20, 0, 0.7);
+        color: white;
+        transition: 0.4s;
     }
 }

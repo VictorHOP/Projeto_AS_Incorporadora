@@ -15,35 +15,21 @@
 <body>
 
     <header
-        class=" d-flex flex-sm-row-reverse flex-lg-row justify-content-lg-end justify-content-sm-start container-xxl-fluid w-100">
+        class=" d-flex flex-sm-row-reverse flex-lg-row justify-content-lg-between justify-content-between justify-content-sm-start container-xxl-fluid w-100 align-items">
 
-        <nav class="navbar navbar-expand-lg navbar-light bg-white d-sm-flex" id="navbar">
-            <div class="container-fluid bg-white">
+        <nav class="navbar navbar-expand-lg navbar-light d-sm-flex justify-content-start" id="navbar">
+            <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu"
                     aria-controls="offcanvasMenu">
-                    <span class="navbar-toggler-icon" data-bs-target="#offcanvasMenu"></span>
+                    <span class="navbar-toggler-icon me-2" data-bs-target="#offcanvasMenu"></span>MENU
                 </button>
-                <div class="offcanvas offcanvas-end bg-white" data-bs-hideresize="true" tabindex="-1" id="offcanvasMenu"
+                <div class="offcanvas offcanvas-end " data-bs-hideresize="true" tabindex="-1" id="offcanvasMenu"
                     aria-labelledby="offcanvasMenu">
                     <div class="offcanvas-header">
-                        <div class="background-footer w-100 d-flex justify-content-center text-white footer-verde">
-                            <div class="d-flex align-items-center footer-vendas">
-                                <img class="pe-2" src="assets/images/icone-tel-footer.png" alt="icone telefone">
-                                <p class="m-0 py-2">
-                                    <fw700>Vendas</fw700><br>18 3916 2287
-                                </p>
-                            </div>
-                            <div class="d-flex align-items-center footer-vendas">
-                                <img class="pe-2" src="assets/images/icone-whats-footer.png" alt="icone Whatsapp">
-                                <p class="m-0">
-                                    <fw700>Whatsapp</fw700><br>18 3916 2287
-                                </p>
-                            </div>
-                        </div>
 
                     </div>
                     <div class="offcanvas-body">
-                        <ul class="navbar-nav menu me-xl-5 pe-xl-5 pe-sm-0">
+                        <ul class="navbar-nav menu">
                             <li class="nav-item">
                                 <a class="nav-link" href="#">HOME</a>
                             </li>
@@ -58,19 +44,19 @@
                             </li>
                         </ul>
                         <div class="d-md-none align-items-center d-flex d-sm-flex flex-column pb-5 mb-5">
-                            <button class="botao-preto w-100 mb-4"><img src="assets/images/icone-colaborador.png"
+                            <a href="" class="botao-preto w-100 mb-4 "><img src="assets/images/icone-colaborador.png"
                                     alt="Icone 3 pessoas">
-                                COLABORADOR</button>
-                            <button class="botao-vermelho w-100"><img src="assets/images/icone-cliente.png"
+                                COLABORADOR</a>
+                            <a href="" class="botao-vermelho w-100"><img src="assets/images/icone-cliente.png"
                                     alt="icone usuario">
-                                CLIENTE</button>
+                                CLIENTE</a>
                         </div>
                         <div
-                            class="d-flex justify-content-between px-5 align-items-center close fixed-bottom d-lg-none">
+                            class="d-flex justify-content-between px-5 align-items-center py-2 close fixed-bottom d-lg-none">
                             <button type="button" class="btn-close btn-close text-reset d-lg-none fw-bold fs-22"
                                 data-bs-dismiss="offcanvas" aria-label="Close"><img src="assets/images/fechar.png"
                                     alt="">FECHAR</button>
-                            <img src="assets/images/logo-AS.png" style="width: 68px; height: 78px;" alt="Logo AS">
+                            <img src="assets/images/logo-AS.png" style="width: 68px; height: 75px;" alt="Logo AS">
                         </div>
 
                     </div>
@@ -81,14 +67,15 @@
             </div>
         </nav>
 
-        <div class="d-md-flex align-items-center me-lg-0 me-5 pe-lg-0 pe-5 d-none d-sm-none">
-            <button class="botao-preto"><img src="assets/images/icone-colaborador.png" alt="Icone 3 pessoas">
-                COLABORADOR</button>
-            <button class="botao-vermelho"><img src="assets/images/icone-cliente.png" alt="icone usuario">
-                CLIENTE</button>
+        <div
+            class="d-md-flex justify-content-center justify-content-lg-end align-items-center w-100 me-lg-0 d-none d-sm-none ms-5 ms-lg-0">
+            <a href="" class="botao-preto me-3"><img src="assets/images/icone-colaborador.png" alt="Icone 3 pessoas">
+                COLABORADOR</a>
+            <a href="" class="botao-vermelho me-3"><img src="assets/images/icone-cliente.png" alt="icone usuario">
+                CLIENTE</a>
         </div>
 
-        <div class="logo d-sm-block d-none">
+        <div class="logo me-4 me-sm-0">
             <img src="assets/images/logo-AS.png" alt="Logo AS Incorporadora">
         </div>
 
@@ -97,22 +84,48 @@
     <!-- HEADER TUDO QUE ESTA ACIMA -->
     <main>
 
-        <section class="background-capa">
-            <div class="d-flex justify-content-end align-items-center pt-5 container-fluid">
-                <div class="pb-5">
-                    <img src="assets/images/circulo-loteamento.png" alt="imagem circulo com arvore">
+        <section class="swiper swiperCapa">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide background-capa">
+                    <div class="d-flex justify-content-end align-items-center pt-5 container-fluid">
+                        <div class="pb-5">
+                            <img src="assets/images/circulo-loteamento.png" alt="imagem circulo com arvore">
+                        </div>
+
+                        <div class="d-flex flex-column text-white col-4 pe-5">
+                            <h3 class="amarelo fs-30 fw-bold">Últimos Lotes Disponíveis</h3>
+                            <h4 class="fs-33 fw-normal">Não perca a chance<br> de viver bem!</h4>
+                            <p class="fs-15">OSVALDO CRUZ - SP . 110 LOTES</p>
+                            <a href="" class="botao-transparente-bwhite col-8">CLIQUE E CONHEÇA</a>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="d-flex flex-column text-white col-4 pe-5">
-                    <h3 class="amarelo fs-30 fw-bold">Últimos Lotes Disponíveis</h3>
-                    <h4 class="fs-33 fw-normal">Não perca a chance<br> de viver bem!</h4>
-                    <p class="fs-15">OSVALDO CRUZ - SP . 110 LOTES</p>
-                    <button class="botao-transparente-bwhite col-8">CLIQUE E CONHEÇA</button>
+                <div class="swiper-slide background-capa">
+                    <div class="d-flex justify-content-end align-items-center pt-5 container-fluid">
+                        <div class="pb-5">
+                            <img src="assets/images/circulo-loteamento.png" alt="imagem circulo com arvore">
+                        </div>
+
+                        <div class="d-flex flex-column text-white col-4 pe-5">
+                            <h3 class="amarelo fs-30 fw-bold">Últimos Lotes Disponíveis</h3>
+                            <h4 class="fs-33 fw-normal">Não perca a chance<br> de viver bem!</h4>
+                            <p class="fs-15">OSVALDO CRUZ - SP . 110 LOTES</p>
+                            <a href="" class="botao-transparente-bwhite col-8">CLIQUE E CONHEÇA</a>
+                        </div>
+                    </div>
                 </div>
-                <img src="assets/images/swiper-capa.png" alt="">
+                <div class="swiper-slide background-capa"></div>
+                <div class="swiper-slide background-capa"></div>
+                <div class="swiper-slide background-capa"></div>
             </div>
-
+            <div class="swiper-pagination"></div>
+            <div class=" align-items-end justify-content-center button-swiper-capa">
+                <img class="swiper-button-prev" src="assets/images/prev-branco.png" alt="seta esquerda">
+                <img class="swiper-button-next" src="assets/images/next-branco.png" alt="seta direita">
+            </div>
         </section>
+
 
         <section class="container pt-5 mt-3">
             <h2 class="vermelho">PRÓXIMOS <BR>
@@ -169,13 +182,13 @@
                         <p class="fs-14">Bairro Centro</p>
                     </div>
                 </div>
-                <div class="d-flex justify-content-between my-5 pb-5 ">
-                    <div class="d-flex align-items-end">
+                <div class="d-flex flex-column flex-sm-row justify-content-between my-5 pb-5 ">
+                    <div class="d-flex align-items-end justify-content-center">
                         <img class="swiper-button-prev pe-3" src="assets/images/swipper-button-prev.png"
                             alt="botão esquerda">
                         <img class="swiper-button-next" src="assets/images/swipper-button-next.png" alt="botão direita">
                     </div>
-                    <button class="botao-vermelho px-5 m-0">VER TODOS OS LANÇAMENTOS</button>
+                    <a href="" class="botao-vermelho px-5 m-sm-0 my-3">VER TODOS OS LANÇAMENTOS</a>
                 </div>
             </div>
             <div class="mt-5 pt-3">
@@ -238,14 +251,14 @@
                             <p class="fs-14">288 LOTES</p>
                         </div>
                     </div>
-                    <div class="d-flex justify-content-between my-5 pb-5 ">
-                        <div class="d-flex align-items-end">
+                    <div class="d-flex flex-column flex-sm-row justify-content-between my-5 pb-5 ">
+                        <div class="d-flex align-items-end justify-content-center">
                             <img class="swiper-button-prev pe-3" src="assets/images/swipper-button-prev.png"
                                 alt="botão esquerda">
                             <img class="swiper-button-next" src="assets/images/swipper-button-next.png"
                                 alt="botão direita">
                         </div>
-                        <button class="botao-vermelho px-5 m-0">VER TODOS OS EMPREENDIMENTOS</button>
+                        <a href="" class="botao-vermelho px-sm-5 my-3 m-sm-0">VER TODOS OS EMPREENDIMENTOS</a>
                     </div>
                 </div>
 
@@ -280,8 +293,8 @@
                     </p>
 
                     <div class="my-5 pb-5 d-flex flex-md-row flex-column col-12 col-sm-auto">
-                        <button class="botao-vermelho px-5 me-md-4 mb-3 mb-md-0">CONHEÇA A INCORPORADORA</button>
-                        <button class="botao-transparente-bred px-4">ENTRE EM CONTATO</button>
+                        <a href="" class="botao-vermelho px-5 me-md-4 mb-3 mb-md-0">CONHEÇA A INCORPORADORA</a>
+                        <a href="" class="botao-transparente-bred px-4">ENTRE EM CONTATO</a>
                     </div>
                 </div>
             </div>
@@ -400,15 +413,15 @@
 
                         </a>
                     </div>
-                    <div class="d-flex justify-content-between my-5 pb-5 ">
-                        <div class="d-flex align-items-end">
+                    <div class="d-flex flex-column flex-sm-row justify-content-between my-5 pb-5 ">
+                        <div class="d-flex align-items-end justify-content-center">
                             <img class="swiper-button-prev pe-3" src="assets/images/swipper-button-prev.png"
                                 alt="botão esquerda">
                             <img class="swiper-button-next" src="assets/images/swipper-button-next.png"
                                 alt="botão direita">
                         </div>
 
-                        <button class="botao-vermelho px-5 m-0">VER TODAS AS NOTICIAS</button>
+                        <a class="botao-vermelho px-5 m-sm-0 my-3">VER TODAS AS NOTICIAS</a>
                     </div>
                 </div>
 
@@ -418,7 +431,7 @@
 
     </main>
 
-    <footer>
+    <footer class="mb-5 pb-5 mb-sm-0 pb-sm-0">
 
         <section class="bg-black py-5">
             <div class="container py-5">
@@ -426,19 +439,20 @@
                     <fw700>POR E-MAIL</fw700>
                 </h2>
                 <hr class="text-muted pb-3">
-                <div>
-                    <div class="d-flex flex-column flex-sm-row justify-content-between">
-                        <input class="col-lg-4 col-sm-5 col-12 py-3 mb-4 mb-lg-0" type="text" name="nome"
-                            placeholder="Digite seu nome">
-                        <input class="col-lg-4 col-sm-5 col-12 py-3 mb-4 mb-lg-0" type="email" name="email"
+
+                <form class="row">
+                    <div class="col-lg-4 col-sm-6">
+                        <input class="col-12 py-3 mb-4 mb-lg-0" type="text" name="nome" placeholder="Digite seu nome">
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <input class="col-12 py-3 mb-4 mb-lg-0" type="email" name="email"
                             placeholder="Digite seu e-mail">
-                        <input type="submit" class="botao-vermelho m-0 d-lg-block d-none  px-5"
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <input type="submit" class="col-12 botao-vermelho m-0 d-lg-block py-3 h-100"
                             value="RECEBER NOVIDADES">
                     </div>
-                    <input type="submit" class="botao-vermelho col-12 m-0 d-lg-none d-block" style="height: 60px;"
-                        value="RECEBER NOVIDADES">
-                </div>
-            </div>
+                </form>
         </section>
 
         <section class="container">
@@ -471,12 +485,12 @@
                     </div>
 
                     <div class="d-lg-flex flex-column justify-content-between d-sm-none d-none">
-                        <button class="botao-preto m-0 py-2"><img src="assets/images/icone-colaborador.png"
+                        <a href="" class="botao-preto m-0 py-2"><img src="assets/images/icone-colaborador.png"
                                 alt="Icone 3 pessoas">
-                            COLABORADOR</button>
-                        <button class="botao-vermelho m-0 py-2 mb-5"><img src="assets/images/icone-cliente.png"
+                            COLABORADOR</a>
+                        <a href="" class="botao-vermelho m-0 py-2 mb-5"><img src="assets/images/icone-cliente.png"
                                 alt="icone usuario">
-                            CLIENTE</button>
+                            CLIENTE</a>
                     </div>
                 </div>
                 <div class="d-flex justify-content-between mt-4 pb-sm-5 pb-3">
@@ -504,12 +518,12 @@
                 <div class="d-flex flex-column flex-sm-row d-lg-none justify-content-between mt-4 pb-5">
                     <div
                         class="d-lg-none justify-content-between d-sm-flex d-flex align-items-center flex-column flex-sm-row">
-                        <button class="botao-preto m-0 py-2 me-sm-2 mb-3 mb-sm-0 col-11 col-sm-auto"><img
+                        <a href="" class="botao-preto m-0 py-2 me-sm-2 mb-3 mb-sm-0 col-11 col-sm-auto"><img
                                 src="assets/images/icone-colaborador.png" alt="Icone 3 pessoas">
-                            COLABORADOR</button>
-                        <button class="botao-vermelho m-0 py-2 col-11 col-sm-auto"><img
+                            COLABORADOR</a>
+                        <a href="" class="botao-vermelho m-0 py-2 col-11 col-sm-auto"><img
                                 src="assets/images/icone-cliente.png" alt="icone usuario">
-                            CLIENTE</button>
+                            CLIENTE</a>
                     </div>
 
                     <div class="d-flex d-sm-none flex-column pt-4 ms-3">
@@ -540,7 +554,8 @@
                 <img class="pb-md-0 pb-3" style="max-width: 270px;" src="assets/images/logo-AS-vertical.png"
                     alt="Logo AS Incorporadora">
                 <div class="d-flex align-items-center">
-                    <p class="fs-14 m-0 text-muted ps-md-4 pe-md-2">Todos os direitos reservados © 2021 | AS
+                    <p class="fs-14 m-0 text-muted ps-md-4 pe-md-2 text-center text-md-start">Todos os direitos
+                        reservados © 2021 | AS
                         Icorporadora -
                         CRECI 021030-J -
                         Criação <img class="pt-1" src="assets/images/logo-o2.png" alt="logo oxigenweb"></p>
@@ -550,26 +565,26 @@
             </div>
         </section>
 
-        <div class="background-footer d-sm-flex d-none justify-content-center text-white footer-verde">
-            <div class="d-flex align-items-center">
+        <nav class="background-footer d-flex justify-content-center text-white footer-verde">
+            <a href="" class="d-sm-flex d-none align-items-center">
                 <img class="pe-2" src="assets/images/icone-email-footer.png" alt="icone carta">
                 <p class="m-0">
                     <fw700>Formulário</fw700><br>de contato
                 </p>
-            </div>
-            <div class="d-flex align-items-center footer-vendas">
+            </a>
+            <a href="" class="d-flex align-items-center footer-vendas">
                 <img class="pe-2" src="assets/images/icone-tel-footer.png" alt="icone telefone">
                 <p class="m-0 py-2">
                     <fw700>Vendas</fw700><br>18 3916 2287
                 </p>
-            </div>
-            <div class="d-flex align-items-center">
+            </a>
+            <a href="" class="d-flex align-items-center borda-whats-footer">
                 <img class="pe-2" src="assets/images/icone-whats-footer.png" alt="icone Whatsapp">
                 <p class="m-0">
                     <fw700>Whatsapp</fw700><br>18 3916 2287
                 </p>
-            </div>
-        </div>
+            </a>
+        </nav>
     </footer>
     <!-- SCRIPTS -->
     <!-- JavaScript Bundle with Popper -->
@@ -580,10 +595,10 @@
     <!-- Initialize Swiper -->
     <script>
 
-        const swiper2 = new Swiper('.swiperProximo', {
+        const swiper1 = new Swiper('.swiperCapa', {
             // Default parameters
-            slidesPerView: 3,
-            spaceBetween: 10,
+            slidesPerView: 1,
+           
             pagination: {
                 el: ".swiper-pagination",
                 clickable: true,
@@ -591,6 +606,34 @@
             navigation: {
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev",
+            },
+
+        })
+
+        const swiper2 = new Swiper('.swiperProximo', {
+            // Default parameters
+            slidesPerView: 3,
+            spaceBetween: 10,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                // when window width is >= 320px
+                300: {
+                    slidesPerView: 2,
+                    spaceBetween: 20
+                },
+
+                768: {
+                    slidesPerView: 2.5,
+                    spaceBetween: 40
+                },
+
+                992: {
+                    slidesPerView: 3,
+                    spaceBetween: 10
+                }
             },
         })
 
@@ -606,6 +649,23 @@
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev",
             },
+            breakpoints: {
+                // when window width is >= 320px
+                300: {
+                    slidesPerView: 2,
+                    spaceBetween: 20
+                },
+
+                768: {
+                    slidesPerView: 2.5,
+                    spaceBetween: 40
+                },
+
+                992: {
+                    slidesPerView: 3,
+                    spaceBetween: 10
+                }
+            },
         })
 
         const swiper4 = new Swiper('.swiperNovidades', {
@@ -620,9 +680,9 @@
                     spaceBetween: 20
                 },
 
-                640: {
+                576: {
                     slidesPerView: 2,
-                    spaceBetween: 40
+                    spaceBetween: 20
                 }
             },
             pagination: {
@@ -646,6 +706,23 @@
             navigation: {
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                // when window width is >= 320px
+                320: {
+                    slidesPerView: 1.5,
+                    spaceBetween: 20
+                },
+
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 40
+                },
+
+                992: {
+                    slidesPerView: 3,
+                    spaceBetween: 20
+                }
             },
         })
 
