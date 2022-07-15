@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+
+    <title>Home - AsIncorporadora</title>
+</head>
+
+<body>
+
+    <div class="swiper swiperTeste">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide position-relative">
+
+                <div class="d-flex background-capa justify-content-end align-items-center pt-5 container-fluid">
+                    <div class="pb-5">
+                        <img src="assets/images/circulo-loteamento.png" alt="imagem circulo com arvore">
+                    </div>
+
+                    <div class="d-flex flex-column text-white col-4 pe-5">
+                        <h3 class="amarelo fs-30 fw-bold">Últimos Lotes Disponíveis</h3>
+                        <h4 class="fs-33 fw-normal">Não perca a chance<br> de viver bem!</h4>
+                        <p class="fs-15">OSVALDO CRUZ - SP . 110 LOTES</p>
+                        <a href="" class="botao-transparente-bwhite col-8">CLIQUE E CONHEÇA</a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide position-relative">
+
+                <div class="d-flex background-capa justify-content-end align-items-center pt-5 container-fluid">
+                    <div class="pb-5">
+                        <img src="assets/images/circulo-loteamento.png" alt="imagem circulo com arvore">
+                    </div>
+
+                    <div class="d-flex flex-column text-white col-4 pe-5">
+                        <h3 class="amarelo fs-30 fw-bold">Últimos Lotes Disponíveis</h3>
+                        <h4 class="fs-33 fw-normal">Não perca a chance<br> de viver bem!</h4>
+                        <p class="fs-15">OSVALDO CRUZ - SP . 110 LOTES</p>
+                        <a href="" class="botao-transparente-bwhite col-8">CLIQUE E CONHEÇA</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide position-relative">
+
+                <div class="d-flex background-capa justify-content-end align-items-center pt-5 container-fluid">
+                    <div class="pb-5">
+                        <img src="assets/images/circulo-loteamento.png" alt="imagem circulo com arvore">
+                    </div>
+
+                    <div class="d-flex flex-column text-white col-4 pe-5">
+                        <h3 class="amarelo fs-30 fw-bold">Últimos Lotes Disponíveis</h3>
+                        <h4 class="fs-33 fw-normal">Não perca a chance<br> de viver bem!</h4>
+                        <p class="fs-15">OSVALDO CRUZ - SP . 110 LOTES</p>
+                        <a href="" class="botao-transparente-bwhite col-8">CLIQUE E CONHEÇA</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide position-relative">
+
+                <div class="d-flex background-capa justify-content-end align-items-center pt-5 container-fluid">
+                    <div class="pb-5">
+                        <img src="assets/images/circulo-loteamento.png" alt="imagem circulo com arvore">
+                    </div>
+
+                    <div class="d-flex flex-column text-white col-4 pe-5">
+                        <h3 class="amarelo fs-30 fw-bold">Últimos Lotes Disponíveis</h3>
+                        <h4 class="fs-33 fw-normal">Não perca a chance<br> de viver bem!</h4>
+                        <p class="fs-15">OSVALDO CRUZ - SP . 110 LOTES</p>
+                        <a href="" class="botao-transparente-bwhite col-8">CLIQUE E CONHEÇA</a>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="d-none d-lg-block">
+            <div class="button-swiper-capa">
+                <div class="swiper-pagination swiper-pagination-vertical"></div>
+            </div>
+            <div class=" align-items-end justify-content-center button-swiper-capa">
+                <img class="swiper-button-prev" src="assets/images/prev-branco.png" alt="seta esquerda">
+                <img class="swiper-button-next" src="assets/images/next-branco.png" alt="seta direita">
+            </div>
+        </div>
+        <div class="d-lg-none d-block">
+            <div class="button-swiper-capa-responsivo">
+                <div class="swiper-pagination"></div>
+            </div>
+            <div class=" align-items-end justify-content-center button-swiper-capa-responsivo d-flex">
+                <img class="swiper-button-prev me-4" src="assets/images/prev-branco.png" alt="seta esquerda">
+                <img class="swiper-button-next" src="assets/images/next-branco.png" alt="seta direita">
+            </div>
+        </div>
+
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br>
+
+    <!-- SCRIPTS -->
+    <!-- JavaScript Bundle with Popper -->
+    <script src="assets/bootstrap/bootstrap.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+
+        const swiperteste = new Swiper('.swiperTeste', {
+            // Default parameters
+            slidesPerView: 1,
+            spaceBetween: 10,
+
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+
+        })
+
+        const swiper1 = new Swiper('.swiperCapa', {
+            // Default parameters
+            slidesPerView: 1,
+            spaceBetween: 10,
+
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+
+        })
+
+        const swiper2 = new Swiper('.swiperProximo', {
+            // Default parameters
+            slidesPerView: 3,
+            spaceBetween: 10,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                // when window width is >= 320px
+                300: {
+                    slidesPerView: 2,
+                    spaceBetween: 20
+                },
+
+                768: {
+                    slidesPerView: 2.5,
+                    spaceBetween: 40
+                },
+
+                992: {
+                    slidesPerView: 3,
+                    spaceBetween: 10
+                }
+            },
+        })
+
+        const swiper3 = new Swiper('.swiperEncontre', {
+            // Default parameters
+            slidesPerView: 3,
+            spaceBetween: 10,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                // when window width is >= 320px
+                300: {
+                    slidesPerView: 2,
+                    spaceBetween: 20
+                },
+
+                768: {
+                    slidesPerView: 2.5,
+                    spaceBetween: 40
+                },
+
+                992: {
+                    slidesPerView: 3,
+                    spaceBetween: 10
+                }
+            },
+        })
+
+        const swiper4 = new Swiper('.swiperNovidades', {
+            // Default parameters
+            slidesPerView: 2,
+            spaceBetween: 10,
+            // Responsive breakpoints
+            breakpoints: {
+                // when window width is >= 320px
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 20
+                },
+
+                576: {
+                    slidesPerView: 2,
+                    spaceBetween: 20
+                }
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        })
+
+        const swiper5 = new Swiper('.swiperVeredas3', {
+            // Default parameters
+            slidesPerView: 3,
+            spaceBetween: 10,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                // when window width is >= 320px
+                320: {
+                    slidesPerView: 1.5,
+                    spaceBetween: 20
+                },
+
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 40
+                },
+
+                992: {
+                    slidesPerView: 3,
+                    spaceBetween: 20
+                }
+            },
+        })
+
+    </script>
+    <script type="text/javascript">
+
+
+        function range() {
+            let resultado = document.getElementById("resultado");
+            let valor = document.getElementById("valor").value;
+            resultado.innerHTML = valor
+        }
+
+        range()
+
+        document.addEventListener("change", range);
+
+    </script>
+</body>
+
+</html>
